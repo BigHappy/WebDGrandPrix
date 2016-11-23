@@ -3,6 +3,9 @@ $sub-color:#F76B40;
 $white-color: #FFFFFE;
 $black-color:#303639;
 $gold-color:#A47B48;
+$twitter-color:#00aced ;
+$facebook-color:#305097 ;
+$yellow-color:#f6cc4c;
 
 
 html {
@@ -12,6 +15,8 @@ html {
 body{
     width: 100%;
     height: 100%;
+    font-family : YuGothic, '游ゴシック', sans-serif;
+
 }
 .clearfix:after {
     content:" ";
@@ -40,11 +45,13 @@ body{
 }
 .description{
     height: 1000px;
-
+    background-image: url("../../images/section2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .first{
-    height: 300%;
-    background-image: url("../../images/point.jpg");
+    height: 225%;
+    background-image: url("../../images/p.jpg");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -63,8 +70,7 @@ body{
 }
 */
 .download{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     .download_heading{
         margin-bottom: 100px;
         font-size: 2rem;
@@ -80,35 +86,70 @@ body{
 
 .share{
     padding-top: 100px;
-    height: 500px;
-    background-color: $main-color;
+    padding-bottom: 100px;
+
+    background-color: $black-color;
     .share_heading{
         margin-bottom: 100px;
-        font-size: 2rem;
+        font-size: 5rem;
         color: $white-color;
         letter-spacing: 1rem;
     }
     .icons{
         margin: 50px auto;
-        width: 300px;
+        width: 500px;
         /*
         flex-direction:row;
         flex-wrap:wrap;
         justify-content:center;
         */
-
         .icon{
             border: 1px solid $white-color;
             border-radius: 50%;
-        }
-        .twitter{
             display: block;
-            font-size: 10rem;
+            float: left;
+            margin: 0 5px 5px 0;
+            padding: 0;
+            color: #fff;
+        }
+        .icon:hover i {
+            transform:scale(1.2);
+            transition: 0.6s;
+        }
+
+        .twitter{
+            width: 100px;
+            height: 100px;
+            margin: 0;
+            border-radius: 50%;
+            border: 1px solid $twitter-color;
+            background: $twitter-color;
+            line-height: 100px;
+            text-align: center;
+            font-size: 5rem;
+            margin-left: 90px;
+        }
+        .twitter:before{
+            padding : 0;
+            line-height: 100px;
         }
         .facebook{
-            display: block;
-            font-size: 10rem;
+            width: 100px;
+            height: 100px;
+            margin: 0;
+            border-radius: 50%;
+            border: 1px solid $facebook-color;
+            background: $facebook-color;
+            line-height: 100px;
+            text-align: center;
+            font-size: 5rem;
+            margin-left: 110px;
         }
+        .facebook:before {
+            padding: 0;
+            line-height: 50px;
+        }
+
     }
 }
 
@@ -116,6 +157,8 @@ body{
 
 .footer{
     padding: 15px;
+    color: $white-color;
+    background: $black-color;
     p{
         text-align: center;
         letter-spacing: 1rem;
