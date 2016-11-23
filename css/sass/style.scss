@@ -1,6 +1,9 @@
-$bg-color: #f9f9f9;
-$font-color: #4d4d4d;
-$main-color : #5500ff;
+$main-color : #FDB657;
+$sub-color:#F76B40;
+$white-color: #FFFFFE;
+$black-color:#303639;
+$gold-color:#A47B48;
+
 
 html {
     font-size: 62.5%;
@@ -29,7 +32,7 @@ body{
 
 .header{
     height: 100%;
-    background-color: $bg-color;
+    background-color: $main-color;
 }
 .description{
     height: 1000px;
@@ -37,14 +40,14 @@ body{
 }
 .first{
     height: 100%;
-    background-color: $bg-color;
+    background-color: $main-color;
 }
 .second{
     height: 100%;
 }
 .third{
     height: 100%;
-    background-color: $bg-color;
+    background-color: $main-color;
 }
 .download{
     height: 750px;
@@ -53,10 +56,12 @@ body{
 .share{
     padding-top: 100px;
     height: 500px;
-    background-color: $bg-color;
+    background-color: $main-color;
     .share_heading{
         margin-bottom: 100px;
         font-size: 2rem;
+        color: $white-color;
+        letter-spacing: 1rem;
     }
     .icons{
         margin: 50px auto;
@@ -64,6 +69,7 @@ body{
         flex-direction:row;
         flex-wrap:wrap;
         justify-content:space-between;
+
         .twitter{
             display: block;
             font-size: 2rem;
