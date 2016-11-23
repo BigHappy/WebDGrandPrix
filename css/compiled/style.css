@@ -40,7 +40,7 @@ body {
 .first {
   height: 225%;
   background-image: url("../../images/p.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat; }
 
 /*
