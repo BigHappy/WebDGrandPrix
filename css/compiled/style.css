@@ -64,10 +64,13 @@ body {
     font-size: 2rem;
     color: #303639;
     letter-spacing: 1rem; }
+  .download .container {
+    width: 135px;
+    margin: 0 auto; }
   .download .download_button {
+    text-align: center;
     display: block;
-    margin: 50px auto;
-    width: 200px; }
+    margin: 50px auto; }
 
 .share {
   padding-top: 100px;
