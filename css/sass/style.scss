@@ -44,9 +44,9 @@ body{
     background-repeat: no-repeat;
 }
 .description{
-    height: 1000px;
+    height: 100%;
     background-image: url("../../images/section2.jpg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 .first{
@@ -160,10 +160,11 @@ body{
 
 
 .footer{
-    padding: 15px;
+    padding: 30px;
     color: $white-color;
     background: $black-color;
     p{
+        font-size: 2rem;
         text-align: center;
         letter-spacing: 1rem;
     }
